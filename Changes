@@ -1,0 +1,11 @@
+Revision history for Perl extension Crypt::OpenSSL::X509::IssuerHash.
+
+0.01  Fri May 26 14:29:17 2006
+	- original version; created by h2xs 1.23 with options
+		--skip-ppport -b5.6.1 -An Crypt::OpenSSL::X509::IssuerHash
+
+0.04  Sun Jul  21 12:37:00 EDT 2013
+Added Dist::Zilla
+
+0.05  Sat Aug  3 00:50:00 EDT 2013
+Cleaned up code, better POD, attacked it with PerlCritic.

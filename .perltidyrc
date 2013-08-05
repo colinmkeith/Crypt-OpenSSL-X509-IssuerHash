@@ -1,0 +1,86 @@
+# Cuddled else:
+--cuddled-else
+
+# Indent 2 spaces
+--indent-columns=2
+
+# Continuation indent:
+--continuation-indentation=1
+
+# Maxline length
+-l=78
+
+# Container tightness
+# Bracket tightness
+-bt=2
+
+# Parenthesis tightness:
+-pt=2
+
+# Square Bracket tightness
+-sbt=2
+
+# Opening Braces on Right
+--opening-brace-always-on-right
+
+# Opening Token on right
+--opening-token-right
+
+# Opening Braces Left
+# -bl
+
+# Opening Braces Left Indented
+# -bli
+
+# Opening Sub Braces
+-nsbl
+
+# Block Brace Vertical tightness
+# -bbvt=X
+
+# Closing Block Brace Indentation
+# -icb
+
+# Stacking open tokens
+-sot
+
+# Stacking closed tokens
+-sct
+
+# Block curly braces
+-bbt=1
+
+# Space beetween function name and parents
+# -sfp
+
+# Spaces between perl keywords and parens
+--nospace-keyword-paren
+
+# Don't put spaces between these keywords and parens
+--nospace-after-keyword="while open my our local close until unless if elsif"
+
+# Trim whitespace around qw quotes
+--trim-qw
+
+# Use hanging side comments:
+--hanging-side-comments
+
+# Statement Termination Semicolon Spaces
+# --space-terminal-semicolon
+
+# For Loop Semicolon Spaces
+--nospace-for-semicolon
+
+# Outdenting Long Quotes
+--nooutdent-long-lines
+
+# Outdenting Labels
+--nooutdent-labels
+
+# Add Missing semicolons
+--add-semicolons
+
+# Delete extra semicolons
+--delete-semicolons
+
+
