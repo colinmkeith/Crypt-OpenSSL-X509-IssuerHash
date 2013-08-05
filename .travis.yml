@@ -1,16 +1,10 @@
 language: perl
-perl:
-   - 5.19
-   - 5.18
-   - 5.16
-   - 5.14
-   - 5.12
-   - 5.10
 before_install:
    - sudo apt-get install -qq libssl-dev
 install:
    - cpanm --quiet --notest --skip-satisfied Dist::Zilla
    - "dzil authordeps | grep -vP '[^\\w:]' | xargs -n 5 -P 10 cpanm --quiet --notest --skip-satisfied"
-   - "dzil listdeps   | grep -vP '[^\\w:]' | xargs -n 5 -P 10 cpanm --quiet --notest --skip-satisfied"
+   - "dzil listdeps   | grep -vP '[^\\w:]'"
+   - "dzil listdeps   | grep -vP '[^\\w:]' | xargs -n 5 -P 10 cpanm --notest --skip-satisfied"
 script:
    - dzil smoke --release --author
