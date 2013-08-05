@@ -2,9 +2,8 @@ language: perl
 before_install:
    - sudo apt-get install -qq libssl-dev
 install:
-   - cpanm --quiet --notest --skip-satisfied Dist::Zilla
+   - cpanm --quiet --notest --skip-satisfied Dist::Zilla Dist::Zilla::Plugin::MakeMaker::Awesome
    - "dzil authordeps | grep -vP '[^\\w:]' | xargs -n 5 -P 10 cpanm --quiet --notest --skip-satisfied"
-   - "dzil listdeps   | grep -vP '[^\\w:]'"
    - "dzil listdeps   | grep -vP '[^\\w:]' | xargs -n 5 -P 10 cpanm --notest --skip-satisfied"
 script:
    - dzil smoke --release --author
