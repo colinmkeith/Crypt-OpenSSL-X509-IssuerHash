@@ -7,7 +7,8 @@ perl:
    - 5.12
    - 5.10
 before_install:
-   - sudo apt-get install -qq libssl-dev;cpanm -in Dist::Zilla::Plugin::MakeMaker::Awesome
+   - sudo apt-get install -qq libssl-dev
+   - cpanm --quiet --notest --skip-satisfied Dist::Zilla::Plugin::MakeMaker::Awesome
 install:
    - cpanm --quiet --notest --skip-satisfied Dist::Zilla
    - "dzil authordeps | grep -vP '[^\\w:]' | xargs -n 5 -P 10 cpanm --quiet --notest --skip-satisfied"
